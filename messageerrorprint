@@ -1,0 +1,4 @@
+message = 'This message will generate an error because '
+message2 = 'it was split by using the enter '
+message3 = 'button on your keyboard'
+print(message + message2 + message3)

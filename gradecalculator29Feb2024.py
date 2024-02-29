@@ -1,0 +1,18 @@
+#program requests five grades as input, displays average after dropping two lowest grades
+grades = []
+num = float(input("enter the first grade: "))
+grades.append(num)
+num = float(input("Enter the second grade: "))
+grades.append(num)
+num = float(input("Enter the third grade: "))
+grades.append(num)
+num = float(input("Enter the fourth grade: "))
+grades.append(num)
+num = float(input("Enter the fifth grade: "))
+grades.append(num)
+minimumGrade = min(grades)
+grades.remove(minimumGrade)
+minimumGrade = min(grades)
+grades.remove(minimumGrade)
+average = sum(grades)/len(grades)
+print("Average Grade: {0:.2f}".format(average))
